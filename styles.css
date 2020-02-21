@@ -1,0 +1,56 @@
+body{
+    min-width: 400px;
+    max-width: 2000px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    background-color: lavenderblush;
+}
+/* Navigation bar CSS */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: lavenderblush;
+}
+
+.active {
+    border-color: #4CAF50;
+}
+
+#footer{
+
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: Black;
+    text-align: center;
+    background-color: lavenderblush ;
+}
+
+
+/* Slideshow container */
+#slideshow-container {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+
+}
+
