@@ -1,38 +1,39 @@
-body{
-    min-width: 400px;
-    max-width: 2000px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: normal;
-    background-color: lavenderblush;
-}
-/* Navigation bar CSS */
-ul {
-    list-style-type: none;
+html, body {
+    min-height: 100%;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    background-color: honeydew;
+    font-size: 14px;
 
 }
 
-li {
-    float: left;
+.app-container {
+    width: 1024px;
+    margin: auto;
+    display: flex;
+    min-height: 100%;
+    background-color: white;
 }
 
-li a {
+.navigation {
+    flex: 0 0 150px;
+    min-height: 100%;
+    background-color: aquamarine;
+}
+
+.navigation a {
     display: block;
-    color: black;
+    padding: 15px;
     text-align: center;
-    padding: 14px 16px;
+    color: black;
+    font-family: sans-serif;
     text-decoration: none;
 }
 
-li a:hover:not(.active) {
-    background-color: lavenderblush;
+.navigation a:hover {
+    color: red;
 }
 
-.active {
-    border-color: #4CAF50;
-}
 
 #footer{
 
