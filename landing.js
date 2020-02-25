@@ -48,7 +48,7 @@ var foo = 'foo'; // Variables declared outside of any function are considered gl
     function orderBy(sortValue) {
         // Sort method varies based on what type of value we're sorting
         var sortedResults = (sortValue === 'name') ?
-            productlist.sort(function (a, b) { // Strings need to be sorted in a slightly more compldex way
+            productlist.sort(function (a, b) { // Strings need to be sorted in a slightly more complex way
                 var nameA = a.name.toUpperCase(); // ignore upper and lowercase
                 var nameB = b.name.toUpperCase(); // ignore upper and lowercase
                 // Sorts alphabetically.  -1 puts it before. 1 puts it after
