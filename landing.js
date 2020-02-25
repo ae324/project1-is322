@@ -13,14 +13,14 @@ var foo = 'foo'; // Variables declared outside of any function are considered gl
 
     // An array of Objects, similar to database records we will eventually be dealing with.
     var productlist = [
-        {  name: 'Plymouth Yarn Collection', price: '3.99', country: 'Turkey', fibercontent: 'Acrylic' },
-        {  name: 'Lana Grossa Print', price: '10.99', country: 'Italy', fibercontent: 'Cotton'},
-        {  name: 'Lang Camille' , price: '20.00',country: 'Turkey', fibercontent: 'Acrylic' },
-        { name: 'Noro Tsubame',  price: '49.95',country: 'Japan', fibercontent: 'Silk' },
-        { name: 'Juniper Farm Cumulus',price: '19.95',  country: 'Italy', fibercontent: 'Cotton'},
-        {  name: 'Cascade Yarns', price: '20.00',country: 'Brazil', fibercontent: ' Mercerized Cotton' },
-        {  name: 'Ella Rae Eco Prints', price: '13.95',country: 'Turkey', fibercontent: ' Cotton'},
-        { name: 'Trendsetter Yarns', price: '20.00', country: 'Italy', fibercontent: 'Bio Cotton' },
+        {  name: 'Plymouth Yarn Collection', price: '3.99', country: 'Turkey', fibercontent: 'Acrylic', imgUrl: 'imgs/RAINBOWTOY.0069.zoom.1.jpg'  },
+        {  name: 'Lana Grossa Print', price: '10.99', country: 'Italy', fibercontent: 'Cotton', imgUrl:'imgs/CertoPrint102.jpg'},
+        {  name: 'Lang Camille' , price: '20.00',country: 'Turkey', fibercontent: 'Acrylic', imgUrl:'imgs/LNG-CAMILL.0052.jpg'},
+        { name: 'Noro Tsubame',  price: '49.95',country: 'Japan', fibercontent: 'Silk', imgUrl:'imgs/Tsubame2.jpg' },
+        { name: 'Juniper Farm Cumulus',price: '19.95',  country: 'Italy', fibercontent: 'Cotton', imgUrl:'imgs/JPM-CUMULUS.01.jpg'},
+        {  name: 'Cascade Yarns', price: '20.00',country: 'Brazil', fibercontent: ' Mercerized Cotton', imgUrl: 'imgs/CAS-PARSLT.101.1.jpg' },
+        {  name: 'Ella Rae Eco Prints', price: '13.95',country: 'Turkey', fibercontent: ' Cotton', imgUrl: 'imgs/ELR-ECOCPR.1001.2.jpg'},
+        { name: 'Trendsetter Yarns', price: '20.00', country: 'Italy', fibercontent: 'Bio Cotton', imgUrl: 'imgs/TRE-MERENG.01.jpg' },
     ];
 
     function renderList (results) {
