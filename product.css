@@ -1,3 +1,60 @@
+html, body {
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: honeydew;
+	font-size: 14px;
+
+}
+
+.app-container {
+	width: 1024px;
+	margin: auto;
+	display: flex;
+	min-height: 100%;
+	background-color: white;
+}
+
+.navigation {
+	flex: 0 0 150px;
+	min-height: 100%;
+	background-color: aquamarine;
+}
+
+.navigation a {
+	display: block;
+	padding: 15px;
+	text-align: center;
+	color: black;
+	font-family: sans-serif;
+	text-decoration: none;
+}
+
+.navigation a:hover {
+	color: red;
+}
+
+
+#footer{
+
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	color: Black;
+	text-align: center;
+	border: black;
+}
+
+
+/* Slideshow container */
+#slideshow-container {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	padding: 10px;
+
+}
+
 
 html, body {
 	min-height: 100%;
@@ -97,4 +154,16 @@ html, body {
 .card img {
 	width: 100%;
 
+}
+.filter-wrapper {
+	display: flex;
+	margin: 15px 0;
+}
+
+#results-table {
+	width: 100%;
+}
+
+#results-table td, #results-table th {
+	padding: 5px;
 }

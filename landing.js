@@ -13,14 +13,14 @@ var foo = 'foo'; // Variables declared outside of any function are considered gl
 
     // An array of Objects, similar to database records we will eventually be dealing with.
     var productlist = [
-        {  name: 'Plymouth Yarn Toybox Collection', price: '3.99', country: 'Turkey', fibercontent: 'Acrylic'},
-        {  name: 'Lana Grossa Certo Print', price: '10.99', country: 'Italy', fibercontent: 'Cotton'},
+        {  name: 'Plymouth Yarn Collection', price: '3.99', country: 'Turkey', fibercontent: 'Acrylic' },
+        {  name: 'Lana Grossa Print', price: '10.99', country: 'Italy', fibercontent: 'Cotton'},
         {  name: 'Lang Camille' , price: '20.00',country: 'Turkey', fibercontent: 'Acrylic' },
         { name: 'Noro Tsubame',  price: '49.95',country: 'Japan', fibercontent: 'Silk' },
-        { name: 'Juniper Moon Farm Cumulus',price: '19.95',  country: 'Italy', fibercontent: 'Cotton'},
-        {  name: 'Cascade Yarns Paradigm Shift Lite', price: '20.00',country: 'Brazil', fibercontent: ' Mercerized Cotton' },
-        {  name: 'Ella Rae Eco Cotton Prints', price: '13.95',country: 'Turkey', fibercontent: ' Cotton'},
-        { name: 'Trendsetter Yarns Merengue', price: '20.00', country: 'Italy', fibercontent: 'Bio Cotton' },
+        { name: 'Juniper Farm Cumulus',price: '19.95',  country: 'Italy', fibercontent: 'Cotton'},
+        {  name: 'Cascade Yarns', price: '20.00',country: 'Brazil', fibercontent: ' Mercerized Cotton' },
+        {  name: 'Ella Rae Eco Prints', price: '13.95',country: 'Turkey', fibercontent: ' Cotton'},
+        { name: 'Trendsetter Yarns', price: '20.00', country: 'Italy', fibercontent: 'Bio Cotton' },
     ];
 
     function renderList (results) {
@@ -30,7 +30,15 @@ var foo = 'foo'; // Variables declared outside of any function are considered gl
         tableBody.innerHTML = '';
         // Map each database record to a string containing the HTML for it's row
         var tableRows = results.map(function (result, index) {
-            return result.name + result.price +  + result.country + result.fibercontent;
+            return (
+                '<div class="card">'+
+                '  <img src="' + result.imgUrl + '">'+
+                '<h1>' + result.name +'</h1> ' +
+                '<p>' + 'Price:' +' $' +result.price +'</p>' +
+                '<p>' + 'Country of Origin:' + ' ' + result.country + '</p>' +
+                '<p>' +'Fiber Content:' + ' ' +result.fibercontent +'</p>'+
+                '</div>'
+            )
         });
         // Set the contents of the table body to the new set of rendered HTML rows
         tableRows.forEach(function (row) {
@@ -65,6 +73,7 @@ var foo = 'foo'; // Variables declared outside of any function are considered gl
                 return a[sortValue] - b[sortValue];
             });
         renderList(sortedResults);
+
     }
     // Change events trigger after the value of a form input changes
     document.querySelector('#orderBy').addEventListener('change', function(event){
